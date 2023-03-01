@@ -89,9 +89,11 @@ First, set up and install [Autogluon](https://github.com/autogluon/autogluon#exa
 
 ### Data Source
 - Trips By Distance: https://catalog.data.gov/dataset/trips-by-distance
+
 ### Code Source
 - Autogluon: https://github.com/autogluon/autogluon
   - Forecasting a time series: https://auto.gluon.ai/stable/tutorials/timeseries/forecasting-quickstart.html
+
 ### Literature
 
 El Khateeb, S., & Shawket, I. M. (2022). A new perception; generating well-being urban public spaces after the era of pandemics. Developments in the Built Environment, 9, 100065. doi:10.1016/j.dibe.2021.100065
