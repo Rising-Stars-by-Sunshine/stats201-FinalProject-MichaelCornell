@@ -4,7 +4,7 @@
 ***Figure No.1**. A poster showing the inital research design.*  
 
 ## Project information
-<img src="https://raw.githubusercontent.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell/main/spotlight/figures/figure2.png" alt="Figure2"/><br/>
+<img src="https://raw.githubusercontent.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell/main/spotlight/figures/figure2.jpg" alt="Figure2"/><br/>
 - **Author**: Michael Cornell, Computation and Design - Computer Science Track, 2026, Duke Kunshan University
 - **Instructor**: Prof. Luyao Zhang, Duke Kunshan University
 - **Disclaimer**: Submissions to Problem Set 2 for STATS201 Introduction to Machine Learning for Social Science, 2023 Spring Term (Seven Week - First) instructed by Prof. Luyao Zhang at Duke Kunshan University.
