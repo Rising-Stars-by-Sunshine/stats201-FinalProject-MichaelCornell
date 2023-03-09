@@ -1,8 +1,8 @@
 # Michael Cornell's Project Portfolio
 
-## Problem Set 2 - Notebook:
+### Final Notebook:
 
-[Jupyter Notebook](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell/blob/main/code/autogluonTrafficModelPredictor.ipynb)
+[Jupyter Notebook](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell/blob/main/code/autogluonTrafficModelPredictor.ipynb) - Only used for data cleaning.
 
 ## Project information
 - **Author**: Michael Cornell, Computation and Design - Computer Science Track, 2026, Duke Kunshan University
@@ -12,7 +12,9 @@
 Many thanks to Professor Luyao Zhang for her careful instruction and to the authors of the Autogluon support documents.
 
 - **Project Summary**: 
-  - Background and Motivation: Traffic modeling has always been difficult to perform. With the advent of new machine learning models, many new opportunities arise to help engineers develop better ways to model traffic. 
+  - Background and Motivation: Topics surrounding susatinible city design have been gaining traction in recent years. As the
+United States tries to wrestle with carbon emissions and decongestion of road networks, many
+have turned to walkability as one of the possible solutions. [1]
   - Research Question: What's the best machine learning application to predict traffic modeling, and how can traffic be predicted over time? We will use Autogluon to help us answer this question.
   - Application Scenario: The research here focuses on trips taken by car at a National level in the United States from 2019-2021. The data comes from a United States government collection of driving behavior.
   - Methodology: The package Autogluon was used to predict future driving behavior beyond the scope of the data, and two separate types of analysis were performed. One allowed for covariate variables, such as whether or not a given day was a holiday or a weekend. The other analysis did not allow for this control.
@@ -20,10 +22,10 @@ Many thanks to Professor Luyao Zhang for her careful instruction and to the auth
   - Intellectual Merit: This research will show that more advanced machine learning models are more helpful and accurate in predicting future traffic models. The results suggest that other fields relating to data forecasting may greatly benefit from the addition of a machine-learning model to help predict trends that legacy models may not pick up on.
 
 ## Table of Contents
-- [Data](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell#data)
-- [Code](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell#code)
-- [Spotlight](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell#spotlight)
-- [References](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell#references)
+- [Data](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell#data)
+- [Code](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell#code)
+- [Spotlight](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell#spotlight)
+- [References](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell#references)
 
 
 
@@ -33,14 +35,21 @@ Many thanks to Professor Luyao Zhang for her careful instruction and to the auth
 |                    |                                                    **Data Links**                                                              |                       **Data Description**                                      |
 |--------------------|:------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
 | **Raw Data**       | [Trips by Distance](https://catalog.data.gov/dataset/trips-by-distance)                                                      | The Bureau of Transportation Statistics (BTS) collected data |
-| **Queried Data**   | [Queried Data](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell/blob/main/data/Queried_Data)   | Data has been cleaned for feeding into the Autogluon algorithm.            |
-| **Processed Data** | [Processed Data](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell/tree/main/data/Processed_Data)        | Future predictions made by Autogluon's top model. |
+|                    | [Walkability Score](https://catalog.data.gov/dataset/walkability-index)                                                      | National Walkability Index, released by the EPA |
+| **Queried Data**   | [Queried Data](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell/blob/main/data/Processed_Data)   | Data has been cleaned using pandas, ready for processing.          |
+| **Processed Data** | [Processed Data](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell/tree/main/code/Analyze%20Results)        | Model details and graph relationships. Includes a model file for retesting. |
 
 </div>
 
 ## Code
-First, set up and install [Autogluon](https://github.com/autogluon/autogluon#example), and follow the instructions for **TimeSeriesPredictor**.
-- **TimeSeriesPredictor** is available [here](https://github.com/Rising-Stars-by-Sunshine/stats201-PS2-MichaelCornell/blob/main/code/autogluonTrafficModelPredictor.ipynb)
+First, install and run Microsoft's [ShowWhy](https://github.com/microsoft/showwhy) software, and follow the instructions for **Causal Discovery**.
+- More information is available [here](https://www.microsoft.com/en-us/research/video/introduction-to-showwhy-user-interfaces-for-causal-decision-making/)
+
+The datasets were too large to be uploaded to GitHub, so they must be downloaded from the [links](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell#data) above.
+
+Next, run all of the code found in [this](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell/tree/main/code/Process%20Data) Jupyter Notebook to properly clean the data. Otherwise, the final cleaned dataset can be obpatined [here](https://github.com/Rising-Stars-by-Sunshine/stats201-FinalProject-MichaelCornell/tree/main/data/Processed_Data)
+
+Finally, use ShowWhy to process the Causal Discovery.
 
 ## Spotlight
 
